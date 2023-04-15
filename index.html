@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>Página de upload</title>
+</head>
+<body>
+  <div id="app">
+    <section class="drag-files">
+      <i class="ph ph-cloud-arrow-up"></i>
+      <h3>Import seus arquivos</h3>
+      <p>Arraste ou clique para fazer upload</p>
+      <input type="file">
+    </section>
+    <section class="files">
+      <div class="box uploading">
+        <div class="icon">
+          <i class="ph-fill ph-file"></i>
+        </div>
+        <div class="info">
+          <div class="filename">foto.png</div>
+          <div class="filesize">
+            <span>30 MB / </span>
+            <span>70 MB</span>
+          </div>
+          <div class="bar">
+            <progress value="50" max="100"></progress>
+            <span>50%</span>
+          </div>
+        </div>
+        <div class="action">
+          <i class="ph ph-x"></i>
+        </div>
+      </div>
+      <div class="box done">
+        <div class="icon">
+          <i class="ph-fill ph-file"></i>
+        </div>
+        <div class="info">
+          <div class="filename">foto.png</div>
+          <div class="filesize">
+            <span>3 KB</span>
+          </div>
+          <div class="bar">
+            <progress value="100" max="100"></progress>
+            <span>100%</span>
+          </div>
+        </div>
+        <!-- <div class="action">
+          <i class="ph ph-x"></i>
+        </div> -->
+      </div>
+      <div class="box error">
+        <div class="icon">
+          <i class="ph-fill ph-file"></i>
+        </div>
+        <div class="info">
+          <div class="filename">foto.png</div>
+          <div class="filesize">
+            <span>4 MB</span>
+            <!-- <span>70 MB</span> -->
+          </div>
+          <div class="bar">
+            <progress value="0" max="100"></progress>
+            <span>Error</span>
+          </div>
+        </div>
+        <div class="action">
+          <i class="ph ph-arrow-counter-clockwise"></i>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
